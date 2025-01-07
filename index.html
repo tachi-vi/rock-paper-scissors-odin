@@ -3,11 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./script.js"></script>
-    <style src="./style.css"></style>
+    <title>Rock-Paper-Scissor</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
+<div class="content">
+    <div id="rpstext">
+        <p> Rock Paper Scissor </p>
+    </div>
+    <div class="logos">
+        <img src="./images/rpc.png">
+    </div>
+
+    <div class = "game-container">
+        <div>
+            <button id="pgb">Play Game</button>
+        </div>
     
+        <div class="playing-screen hidden">
+
+            <div class="player_plays">
+                <p id="roundcounter" style="margin-bottom: 20px; font-size: 30px;">Round No: 1</p>
+                <p style="padding-bottom: 4px;" id="selectchoicetext">Select Your Choice</p>
+                
+                <div class="selection-buttons">
+                    <button id="Rock">Rock</button>
+                    <button id="Paper">Paper</button>
+                    <button id="Scissor">Scissor</button>
+                </div>
+            </div>
+
+            <div class="roundinfotext">
+                <p id="humanChoice" style="margin-top: 20px;"></p>
+                <p id="computerchoice"></p>
+
+            </div>
+            <h4 id="resulttext" style="margin: 20px 0px; font-size: 30px;"></h4>
+
+
+        </div>
+
+
+        <div class="scorefinalresult">
+            <p id="humanscore"></p>
+            <p id="computerscore"></p>
+
+        </div>
+    </div>
+
+</div>
 </body>
 </html>

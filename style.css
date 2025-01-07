@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'MyCustomFont'; /* Name you will use in your CSS */
+    src: url('fonts/PlaywriteAUVICGuides-Regular.ttf') format('truetype'); /* Path to the TTF file */
+    font-weight: normal; /* Optional: You can specify the weight if needed */
+    font-style: normal; /* Optional: Specify style if necessary (normal, italic, etc.) */
+}
+
+
+*{
+    background-color: black;
+    margin: 0px;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    font-family: "Roboto";
+
+}
+
+#rpstext{
+    font-family: 'MyCustomFont', cursive;
+    font-weight: 100;
+    font-size: 50px;
+    font-style: normal;
+}
+
+
+.scorefinalresult, .roundinfotext, #selectchoicetext{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+
+
+.logos img {
+    padding: 20px 0;
+    max-width: 300px;
+    min-height: 30%;
+}
+
+.hidden{
+    display: none;
+}
+
+#pgb{
+    color: white;
+    width: 200px;
+    height: 80px;
+    font-size: 30px;
+    border-width: 4px;
+    border-color: blanchedalmond;
+
+}
+
+
+
+.selection-buttons button{
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 10%;
+    font-size: 17px;
+    border-width: 2px;
+    border-color: blanchedalmond;
+
+}
