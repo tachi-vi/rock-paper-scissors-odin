@@ -106,15 +106,15 @@ var currentround=2;
 
 
 function playOneRound (humanChoice){
-    roundCounter.textContent = 'Round No: ' + currentround;
+    roundCounter.textContent = 'Round No: ' + currentround + '/5';
     let computerChoice=getComputerChoice();
-    result=computeRound(humanChoice,computerChoice);
+    result=computeRound(humanChoice.toLowerCase(),computerChoice);
     const computerChoiceDOM=document.querySelector('#computerchoice');
     const humanChoiceDOM=document.querySelector('#humanChoice');
     humanChoiceDOM.textContent="You Chose "+ humanChoice;
     computerChoiceDOM.textContent="Computer Chose "+ computerChoice;
     const resulttext=document.querySelector('#resulttext');
-    if (result==2){
+    if (2==result){
         humanScore+=1;
         resulttext.textContent="Shaabash Londe, Jeet Gaya!!";
         
@@ -133,7 +133,9 @@ function playOneRound (humanChoice){
     computerScoreHTML.textContent='Computer Score: '+computerScore;
     currentround++; 
     if (currentround>6){
+        
         playingscreen.classList.add("hidden");
+        thcfor.classList.remove('hidden');
     }
   }
 
@@ -141,6 +143,8 @@ var roundCounter=document.querySelector('#roundcounter');
 
 var computerScoreHTML=document.querySelector('#computerscore');
 var humanScoreHTML=document.querySelector('#humanscore');
+
+const thcfor=document.querySelector("#thx");
 
 rock.addEventListener("click", () => {playOneRound('Rock');});
 scissor.addEventListener("click", () => {playOneRound('Scissor');});
